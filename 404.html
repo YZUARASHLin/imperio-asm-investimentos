@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="robots"
+        content="noindex, nofollow"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0A0A0A"
+    >
+
+    <title>Página não encontrada | Império ASM Investimentos</title>
+
+    <link
+        rel="icon"
+        type="image/x-icon"
+        href="assets/favicon.ico"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        :root {
+            --background: #0A0A0A;
+            --surface: #111111;
+            --border: rgba(255, 255, 255, 0.08);
+            --white: #FFFFFF;
+            --gray: #A7A7A7;
+            --green: #1D6F42;
+            --green-hover: #258653;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            background: var(--background);
+            color: var(--white);
+            font-family: "Poppins", sans-serif;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            overflow-x: hidden;
+        }
+
+        .error-page {
+            width: 100%;
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 40px 20px;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background-glow {
+            position: absolute;
+
+            width: 500px;
+            height: 500px;
+
+            background: rgba(29, 111, 66, 0.10);
+
+            filter: blur(100px);
+
+            border-radius: 50%;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            pointer-events: none;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 700px;
+
+            text-align: center;
+
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo {
+            width: 190px;
+            max-width: 70%;
+
+            margin-bottom: 55px;
+        }
+
+        .error-code {
+            font-family: "Montserrat", sans-serif;
+
+            font-size: clamp(6rem, 18vw, 11rem);
+
+            line-height: 0.9;
+
+            font-weight: 700;
+
+            letter-spacing: -8px;
+
+            color: transparent;
+
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.22);
+
+            margin-bottom: 30px;
+
+            position: relative;
+        }
+
+        .error-code::after {
+            content: "404";
+
+            position: absolute;
+
+            inset: 0;
+
+            color: var(--green);
+
+            opacity: 0.18;
+
+            transform: translate(6px, 6px);
+
+            z-index: -1;
+        }
+
+        h1 {
+            font-family: "Montserrat", sans-serif;
+
+            font-size: clamp(1.7rem, 4vw, 2.6rem);
+
+            margin-bottom: 18px;
+
+            font-weight: 600;
+        }
+
+        p {
+            color: var(--gray);
+
+            font-size: 1rem;
+
+            line-height: 1.8;
+
+            max-width: 550px;
+
+            margin: 0 auto 40px;
+        }
+
+        .button {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            min-height: 52px;
+
+            padding: 0 32px;
+
+            border-radius: 6px;
+
+            background: var(--green);
+
+            color: var(--white);
+
+            text-decoration: none;
+
+            font-weight: 600;
+
+            transition:
+                background 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .button:hover {
+            background: var(--green-hover);
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 12px 30px rgba(29, 111, 66, 0.25);
+        }
+
+        .button:focus-visible {
+            outline: 2px solid var(--white);
+            outline-offset: 4px;
+        }
+
+        .footer-text {
+            margin-top: 70px;
+
+            font-size: 0.8rem;
+
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+
+            .error-page {
+                padding: 30px 20px;
+            }
+
+            .logo {
+                width: 155px;
+                margin-bottom: 45px;
+            }
+
+            .error-code {
+                letter-spacing: -5px;
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: 0.92rem;
+            }
+
+            .button {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .footer-text {
+                margin-top: 55px;
+            }
+
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            .button {
+                transition: none;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <main class="error-page">
+
+        <div class="background-glow"></div>
+
+        <div class="content">
+
+            <img
+                src="assets/logo.png"
+                alt="Império ASM Investimentos"
+                class="logo"
+            >
+
+            <div
+                class="error-code"
+                aria-hidden="true"
+            >
+                404
+            </div>
+
+            <h1>
+                Página não encontrada
+            </h1>
+
+            <p>
+                A página que você está procurando não existe,
+                foi movida ou o endereço digitado está incorreto.
+            </p>
+
+            <a
+                href="index.html"
+                class="button"
+            >
+                Voltar para o início
+            </a>
+
+            <div class="footer-text">
+                Império ASM Investimentos
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

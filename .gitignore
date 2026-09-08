@@ -1,0 +1,21 @@
+# Windows
+desktop.ini
+Thumbs.db
+
+# macOS
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Arquivos de sistema
+*.swp
+*.swo
