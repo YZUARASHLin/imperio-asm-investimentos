@@ -30,18 +30,27 @@ O site apresenta os seguintes serviços:
 
 ## Estrutura do projeto
 
+## Estrutura do projeto
+
 ```text
 imperio-asm-site/
 ├── index.html
+├── 404.html
+├── README.md
+├── .gitignore
+├── robots.txt
+├── sitemap.xml
+│
 ├── css/
 │   └── style.css
+│
 ├── js/
 │   └── script.js
-├── assets/
-│   ├── favicon.ico
-│   ├── hero.webp
-│   └── logo.png
-└── README.md
+│
+└── assets/
+    ├── favicon.ico
+    ├── hero.webp
+    └── logo.png
 
 Características:
 Design moderno e profissional
